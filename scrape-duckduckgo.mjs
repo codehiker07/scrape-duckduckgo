@@ -15,6 +15,7 @@ await page.click('svg.iconButton_icon__Vr1u2.iconButton_size-20__O3lP5');
 await page.waitForSelector('span.EKtkFWMYpwzMKOYr0GYm.LQVY1Jpkk8nyJ6HBWKAk')
 await page.click('span.EKtkFWMYpwzMKOYr0GYm.LQVY1Jpkk8nyJ6HBWKAk');
 await page.reload()
+await page.waitForSelector('[data-testid="github-avatar"]')
 await page.screenshot({ path: 'scrape1.png', fullPage: true })
 await browser.close();
 
